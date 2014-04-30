@@ -1,0 +1,29 @@
+{
+  "name": "backbonejs-sandbox",
+  "version": "0.0.1",
+  "homepage": "https://github.com/UaQuetzalcoatl/backbonejs-sandbox",
+  "authors": [
+    "Alex Savchenko <ua.quetzalcoatl@gmail.com>"
+  ],
+  "description": "sandbox application",
+  "main": "main.js",
+  "keywords": [
+    "backbone",
+    "javascript"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": null,
+    "underscore": null,
+    "jquery": null,
+    "requirejs": null
+  }
+}
