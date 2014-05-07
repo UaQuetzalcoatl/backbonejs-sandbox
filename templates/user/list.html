@@ -1,0 +1,5 @@
+<ul>
+    <% _.each(users, function (user) { %>
+        <li><a href="#/user/<%= user.get('id') %>"><%= user.get('username') %></a></li>
+    <% }); %>
+</ul>

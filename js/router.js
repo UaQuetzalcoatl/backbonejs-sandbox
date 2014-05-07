@@ -1,21 +1,23 @@
 define([
     'jquery',
     'underscore',
-    'backbone'
-], function ($, _, Backbone) {
+    'backbone',
+    'views/UserListView'
+], function ($, _, Backbone, UserListView) {
     var Router = Backbone.Router.extend({
         routes: {
-            '/users': 'usersList',
+            '/users': 'userList',
             'user/:id': 'userDetails',
-            '*actions': 'usersList' // default route
+            '*actions': 'userList' // default route
         }
     });
 
     var initialize = function () {
         var router = new Router();
 
-        router.on('route:usersList', function () {
-            console.log('users list');
+        router.on('route:userList', function () {
+            var userListView = new UserListView();
+            userListView.render();
         });
 
         router.on('route:userDetails', function (id) {
@@ -30,5 +32,3 @@ define([
         initialize: initialize
     };
 });
-
-

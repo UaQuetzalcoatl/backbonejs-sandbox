@@ -1,5 +1,4 @@
 require.config({
-    //baseUrl: 'js/lib',
     paths: {
         jquery: 'lib/jquery/dist/jquery',
         backbone: 'lib/backbone/backbone',
