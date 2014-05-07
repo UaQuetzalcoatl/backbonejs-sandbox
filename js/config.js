@@ -1,7 +1,0 @@
-requirejs.config({
-    baseUrl: 'js/lib',
-    paths: {
-        app: '../app',
-        jquery: 'jquery/dist/jquery'
-    }
-});

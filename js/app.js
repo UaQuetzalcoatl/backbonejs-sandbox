@@ -1,9 +1,15 @@
-require(['./config'], function (config) {
-    require(['app/somemodule']);
-});
-// Start the main app logic.
-//requirejs(['jquery', 'underscore/underscore', 'backbone/backbone'],
-//    function ($, _, backbone) {
-//        console.log('Load!!');
-//    }
-//);
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'router'
+], function ($, _, Backbone, Router) {
+        var initialize = function () {
+            Router.initialize();
+        };
+
+        return {
+            initialize: initialize
+        };
+    }
+);

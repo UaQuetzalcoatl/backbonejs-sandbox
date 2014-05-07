@@ -3,9 +3,25 @@
     <head>
         <title>JS sandbox application</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script data-main="js/app" src="js/lib/requirejs/require.js"></script>
+        <script data-main="js/main" src="js/lib/requirejs/require.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div>Hello World!</div>
+        <div id="container">
+            <div id="logo">
+                <h1>Modular Backbone</h1>
+            </div>
+                <div class="menu navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li><a href="#/users" >Users list</a></li>
+                        </ul>
+                    </div>
+                </div>
+              <div id="page">
+                Loading....
+              </div>
+              <div id="footer"></div>
+        </div>
     </body>
 </html>
